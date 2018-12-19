@@ -65,7 +65,7 @@ for i = 2:size(u,1)+1
 
 for n = 2:size(u,1)+1
     figure(size(u,1)+1+n);
-    plot(fshift,fftshift(abs(fft(u(i-1,:)))),'LineWidth',1.6);grid on;
+    plot(fshift,fftshift(abs(fft(u(n-1,:)))),'LineWidth',1.6);grid on;
 %     plot(fshift,fftshift(fft(u(i-1,:))),'k','LineWidth',3);grid on;
 
 end
